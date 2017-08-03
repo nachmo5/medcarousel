@@ -1,0 +1,50 @@
+// jolie carousel de mohamed
+#medcarousel {
+    padding:0;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#medcarousel:after {
+    padding-top: 75%;
+    display: block;
+    content: '';
+}
+
+.carouselleft,.carouselright{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width:8vh;
+    display:inline-block;
+    background-color:rgba(0, 0, 0, 0.3);
+    height:100%;
+    text-align: center;
+
+}
+
+.carouselright:hover,.carouselleft:hover{
+    opacity: 1 !important;
+    background-color:rgba(0, 0, 0, 0.6);
+    #carouselicon{
+        opacity:1;
+    }
+
+}
+#carouselicon{
+        color:white;
+        font-size:2em;
+        position:relative;
+        top:47%;
+        opacity:0.7;
+}
+
+.carouselright{
+right:0;
+}
+
+
+// end carousel ***************************
