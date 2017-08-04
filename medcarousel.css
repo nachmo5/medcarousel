@@ -4,12 +4,14 @@
     width: 100%;
     display: inline-block;
     position: relative;
-    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-repeat: no-repeat !important;
     background-position: center;
-    background-size: cover;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
 }
 #medcarousel:after {
-    padding-top: 75%;
+    padding-top: 60%;
     display: block;
     content: '';
 }
@@ -18,9 +20,8 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width:8vh;
+    width:6vh;
     display:inline-block;
-    background-color:rgba(0, 0, 0, 0.3);
     height:100%;
     text-align: center;
 
@@ -28,18 +29,17 @@
 
 .carouselright:hover,.carouselleft:hover{
     opacity: 1 !important;
-    background-color:rgba(0, 0, 0, 0.6);
     #carouselicon{
         opacity:1;
     }
 
 }
 #carouselicon{
-        color:white;
+        color:grey;
         font-size:2em;
         position:relative;
         top:47%;
-        opacity:0.7;
+        opacity:0.4;
 }
 
 .carouselright{
